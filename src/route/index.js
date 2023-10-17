@@ -8,7 +8,7 @@ const test = require('./test')
 const community = require('./community')
 
 // Об'єднайте файли роутів за потреби
-router.use('/', test)
+router.use('/test', test)
 router.use('/community', community)
 // Використовуйте інші файли роутів, якщо є
 

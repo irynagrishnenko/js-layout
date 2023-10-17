@@ -44,3 +44,23 @@ export const createHeader = () => {
 
   return header
 }
+
+export const createTab = () => {
+  const tab = createElement('div', 'tab')
+
+  const tab__title = createElement(
+    'span',
+    'tab__title',
+    'База знань',
+  )
+  tab.append(tab__title)
+
+  const tab__title__active = createElement(
+    'span',
+    'tab__title active',
+    'Інформація',
+  )
+  tab.append(tab__title__active)
+
+  return tab
+}
